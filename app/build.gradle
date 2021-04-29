@@ -38,12 +38,15 @@ android {
         versionCode 151
         versionName "3.30.1"
 
-        applicationId "io.stormbird.wallet"
+        applicationId "etherio.wallet.com"
         minSdkVersion 23
         targetSdkVersion 29
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         def XInfuraAPI = "XInfuraAPI"
         //Put your Infura key here, NB with over 30 - 40 users this API key will rate limit, it's only here for bootstrapping a free build
+
+        //infura key
+        //debug: to change infura key
         def DEFAULT_INFURA_API_KEY = "\"da3717f25f824cc1baa32d812386d93f\"";
 
         buildConfigField 'int', 'DB_VERSION', '22'
